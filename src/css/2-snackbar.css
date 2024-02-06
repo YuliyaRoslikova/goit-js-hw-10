@@ -1,0 +1,34 @@
+.form {
+  max-width: 360px;
+}
+
+input {
+  padding: 5px 5px;
+  border: 1px solid black;
+}
+
+input[name="delay"] {
+    width: 346px;
+  }
+
+input:active
+input:focus {
+ border-color: blue;
+display: block;
+}
+
+label {
+    width: 100%;
+    display: block;
+}
+.fieldset {
+  margin: 0 0 8px 0;
+}
+
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 100%;
+  margin-top: 8px;
+}
+

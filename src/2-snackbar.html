@@ -5,14 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/2-snackbar.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/2-snackbar.css" />
   </head>
   <body>
-      <a href="./index.html">Go to home</a>
+    <a href="./index.html">Go to home</a>
 
+    <form class="form">
+      <label>
+        Delay (ms)
+        <br>
+        <input type="number" name="delay" required />
+      </label>
 
-      
-      <script src="./js/2-snackbar.js" type="module"></script>
+      <fieldset>
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button type="submit">Create notification</button>
+    </form>
+
+    <script src="./js/2-snackbar.js" type="module"></script>
   </body>
 </html>
