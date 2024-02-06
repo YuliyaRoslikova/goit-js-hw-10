@@ -1,9 +1,6 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const delayRef = document.querySelector('input[name="delay"]');
-const stateRef = document.querySelector('input[name="state"]');
-const submitBtnRef = document.querySelector('button[type="submit"]');
 const formRef = document.querySelector('.form');
 
 formRef.addEventListener('submit', e => {
@@ -34,6 +31,7 @@ formRef.addEventListener('submit', e => {
         backgroundColor: 'green',
         messageColor: 'white',
         progressBar: false,
+        close: false,
       });
     })
     .catch(message => {
@@ -44,6 +42,7 @@ formRef.addEventListener('submit', e => {
         messageColor: 'white',
         icon: '',
         progressBar: false,
+        close: false,
       });
     });
 });
